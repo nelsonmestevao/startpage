@@ -3,33 +3,32 @@ layout: default
 ---
 
 <div class="container">
-    <div id="clock"></div>
-    <div id="search">
-        <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+
+  <div id="clock"></div>
+
+  <div id="search">
+    <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+  </div>
+
+  <div class="weather-container">
+    <div class="row">
+      <div id="weather-description"class="inline"></div>
+      <div class="inline">-</div>
+      <div id="temp" class="inline"></div>
     </div>
-    <div class="weather-container">
-        <div class="row">
-            <div id="weather-description"class="inline"></div>
-            <div class="inline">-</div>
-            <div id="temp" class="inline"></div>
+  </div>
+
+  <div class="bookmark-container">
+    {% for category in site.data.bookmarks %}
+    <div class="bookmark-set">
+      <div class="bookmark-title">{{ category.title }}</div>
+        <div class="bookmark-inner-container">
+          {% for bookmark in category.bookmarks %}
+            <a class="bookmark" href="{{ bookmark.link }}" target="_blank">{{ bookmark.name }}</a>
+          {% endfor %}
         </div>
     </div>
-    <div class="bookmark-container">
-        <div class="bookmark-set">
-            <div class="bookmark-title">College</div>
-            <div class="bookmark-inner-container">
-                <a class="bookmark" href="https://inbox.google.com/" target="_blank">Elearning</a>
-                <a class="bookmark" href="https://github.com/" target="_blank">Laboratórios de Informática II</a>
-                <a class="bookmark" href="https://drive.google.com/" target="_blank">Sistemas de Computação</a>
-                <a class="bookmark" href="https://drive.google.com/" target="_blank">Laboratórios de Informática I</a>
-            </div>
-        </div>
-       <div class="bookmark-set">
-            <div class="bookmark-title">Social</div>
-            <div class="bookmark-inner-container">
-                <a class="bookmark" href="https://twitter.com" target="_blank">Twitter</a>
-                <a class="bookmark" href="https://facebook.com" target="_blank">Facebook</a>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+  </div>
+
 </div>
