@@ -29,3 +29,8 @@ compress_html:
 sass:
   sass_dir: _sass
   style: compact # :nested :expanded :compact :compressed
+
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
