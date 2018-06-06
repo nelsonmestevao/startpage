@@ -1,0 +1,21 @@
+- title: College
+  bookmarks:
+    - name: Laboratórios de Informática I
+      link: http://li1.lsd.di.uminho.pt
+    - name: Laboratórios de Informática II
+      link: http://lim.di.uminho.pt
+    - name: Sistemas de Computação
+      link: http://gec.di.uminho.pt/miei/sc/
+    - name: HelpUM
+      link: https://helpum.herokuapp.com/
+    - name: Elearnig
+      link: https://elearning.uminho.pt
+    - name: CeSIUM
+      link: http://www.cesium.di.uminho.pt
+
+- title: Social
+  bookmarks:
+    - name: Twitter
+      link: https://twitter.com
+    - name: Facebook
+      link: https://facebook.com
